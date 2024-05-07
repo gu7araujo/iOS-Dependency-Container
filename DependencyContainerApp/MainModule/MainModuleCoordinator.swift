@@ -21,7 +21,9 @@ final class MainModuleCoordinator {
     }
     
     func makeView() -> UIViewController {
-        let viewModel = MainModuleViewModel(onGoToDetailTap: pushDetail)
+        let viewModel = MainModuleViewModel(analyticsTracker: AnalyticsEventTracker(),
+                                            networking: NetworkService.shared,
+                                            onGoToDetailTap: pushDetail)
         let viewController = MainModuleViewcontroller(viewModel: viewModel)
         return viewController
     }
