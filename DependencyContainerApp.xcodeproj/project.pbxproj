@@ -18,6 +18,7 @@
 		B730E4082BEAB87500E8AE33 /* DetailModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730E4072BEAB87500E8AE33 /* DetailModuleViewModel.swift */; };
 		B730E40A2BEAB8BD00E8AE33 /* DetailModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730E4092BEAB8BD00E8AE33 /* DetailModuleCoordinator.swift */; };
 		B74E539E2BFBDB5900A70D26 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E539D2BFBDB5900A70D26 /* DependencyContainer.swift */; };
+		B7689BA22C0644AF00D68F27 /* AppConfigurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7689BA12C0644AF00D68F27 /* AppConfigurer.swift */; };
 		B7956F462BEADE8200668575 /* AnalyticsEventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7956F452BEADE8200668575 /* AnalyticsEventTracker.swift */; };
 		B7956F482BEADE9800668575 /* AnalyticsEventTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7956F472BEADE9800668575 /* AnalyticsEventTracking.swift */; };
 		B7956F4B2BEADF4100668575 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7956F4A2BEADF4100668575 /* NetworkService.swift */; };
@@ -53,6 +54,7 @@
 		B730E4072BEAB87500E8AE33 /* DetailModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModuleViewModel.swift; sourceTree = "<group>"; };
 		B730E4092BEAB8BD00E8AE33 /* DetailModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModuleCoordinator.swift; sourceTree = "<group>"; };
 		B74E539D2BFBDB5900A70D26 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		B7689BA12C0644AF00D68F27 /* AppConfigurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurer.swift; sourceTree = "<group>"; };
 		B7956F452BEADE8200668575 /* AnalyticsEventTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTracker.swift; sourceTree = "<group>"; };
 		B7956F472BEADE9800668575 /* AnalyticsEventTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTracking.swift; sourceTree = "<group>"; };
 		B7956F4A2BEADF4100668575 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				B7956F442BEADE6C00668575 /* Analytics */,
 				B730E3FE2BEAB5A700E8AE33 /* DetailModule */,
 				B730E3FD2BEAB59700E8AE33 /* MainModule */,
+				B7689BA12C0644AF00D68F27 /* AppConfigurer.swift */,
 				B74E539D2BFBDB5900A70D26 /* DependencyContainer.swift */,
 				B730E3E92BEA471B00E8AE33 /* AppDelegate.swift */,
 				B730E3EB2BEA471B00E8AE33 /* SceneDelegate.swift */,
@@ -277,6 +280,7 @@
 				B74E539E2BFBDB5900A70D26 /* DependencyContainer.swift in Sources */,
 				B730E4022BEAB69500E8AE33 /* MainModuleViewModel.swift in Sources */,
 				B730E3EA2BEA471B00E8AE33 /* AppDelegate.swift in Sources */,
+				B7689BA22C0644AF00D68F27 /* AppConfigurer.swift in Sources */,
 				B730E3EC2BEA471B00E8AE33 /* SceneDelegate.swift in Sources */,
 				B7956F462BEADE8200668575 /* AnalyticsEventTracker.swift in Sources */,
 				B7956F482BEADE9800668575 /* AnalyticsEventTracking.swift in Sources */,
@@ -370,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -427,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

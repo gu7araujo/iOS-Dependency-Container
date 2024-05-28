@@ -21,8 +21,10 @@ final class MainModuleCoordinator {
     }
     
     func makeView() -> UIViewController {
-        let viewModel = MainModuleViewModel(analyticsTracker: AnalyticsEventTracker(),
-                                            networking: NetworkService.shared,
+        let analytics = DependencyContainer.shared.resolve(type: .closureBased, for: AnalyticsEventTracking.self)
+        let networking = DependencyContainer.shared.resolve(type: .singleInstance, for: Networking.self)
+        let viewModel = MainModuleViewModel(analyticsTracker: analytics,
+                                            networking: networking,
                                             onGoToDetailTap: pushDetail)
         let viewController = MainModuleViewcontroller(viewModel: viewModel)
         return viewController

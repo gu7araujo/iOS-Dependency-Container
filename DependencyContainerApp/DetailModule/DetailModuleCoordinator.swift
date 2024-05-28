@@ -10,8 +10,10 @@ import UIKit
 final class DetailModuleCoordinator {
     
     func makeView() -> UIViewController {
-        let viewModel = DetailModuleViewModel(analyticsTracker: AnalyticsEventTracker(),
-                                              networking: NetworkService.shared)
+        let analytics = DependencyContainer.shared.resolve(type: .closureBased, for: AnalyticsEventTracking.self)
+        let networking = DependencyContainer.shared.resolve(type: .singleInstance, for: Networking.self)
+        let viewModel = DetailModuleViewModel(analyticsTracker: analytics,
+                                              networking: networking)
         let viewController = DetailModuleViewController(viewModel: viewModel)
         return viewController
     }
